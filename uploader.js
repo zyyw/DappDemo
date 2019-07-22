@@ -2,7 +2,7 @@
 const ipAddr = "127.0.0.1"
 const toSun = 1000000;
 const timeout = 3000;
-const contractAddress = "TSCq9oKH1MKxdyshYvqJ6w5zH3tuFSj7AC";
+const contractAddress = "TPSDTpafTdXBcJFb8bn9Y3TNqTyp7h84vi";
 
 async function addImageSection(qmHash, contract) {
     if (contract == null) {
@@ -15,7 +15,7 @@ async function addImageSection(qmHash, contract) {
 
     // append the image
     var elem = document.createElement("img");
-    elem.setAttribute("src", "http://" + ipAddr + ":8080/ipfs/" + qmHash);
+    elem.setAttribute("src", "http://" + ipAddr + ":8080/btfs/" + qmHash);
     elem.setAttribute("width", 450);
     document.getElementById(qmHash).appendChild(elem);
 
